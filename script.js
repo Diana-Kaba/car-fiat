@@ -17,11 +17,11 @@ let fiat = {
   drive: function () {
     if (this.started) {
       alert("Біп!");
-      fiat.fuel = fiat.fuel - 1;
+      this.fuel = fiat.fuel - 1;
     } else {
       alert("Спочатку запустіть двигун!");
     }
-    if (fiat.fuel == 0) {
+    if (this.fuel == 0) {
       alert("Для подальшого руху потрібно поповнення палива!");
     }
   },
