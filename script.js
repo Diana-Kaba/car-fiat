@@ -32,7 +32,18 @@ let fiat = {
     this.fuel += amount;
   },
   toString: function () {
-    return "Автомобіль " + this.make;
+    return (
+      "Автомобіль " +
+      this.make +
+      " " +
+      this.model +
+      " " +
+      this.year +
+      " " +
+      this.color +
+      " " +
+      this.mileage
+    );
   },
 };
 
